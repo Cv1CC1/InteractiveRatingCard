@@ -1,0 +1,140 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light_gray: hsl(217, 12%, 63%);
+    --medium_gray: hsl(216, 12%, 25%);
+    --dark_blue: hsl(213, 19%, 18%);
+    --very_dark_blue: hsl(216, 12%, 8%);
+
+    background-color: var(--very_dark_blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+h1 {
+    margin: 10px 0px 0px 0px;
+}
+
+p{
+    font-size: 15px;
+    color: var(--light_gray);
+}
+
+/* FIRST CARD */
+
+.first-card {
+    background-color: var(--dark_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 20%;
+    border-radius: 20px;
+}
+
+.star-wrapper {
+    background-color: var(--medium_gray);
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.star {
+    width: 20px;
+}
+
+.rating-numbers {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.rating-number-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    background-color: var(--medium_gray);
+    color: var(--light_gray);
+    border-radius: 50%;
+}
+
+.rating-number-wrapper:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating-number-active {
+    background-color: var(--light_gray);
+    color: var(--white);
+}
+
+.submit {
+    color: var(--white);
+    border: 0px solid;
+    background-color: var(--orange);
+    margin-top: 20px;
+    padding: 0.7rem;
+    border-radius: 20px;
+}
+
+.submit:hover {
+    transition: 0.5s;
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* THANK YOU CARD */
+
+.hidden {
+    display: none !important;
+}
+
+.ilustration {
+    width: 200px;
+    margin: 30px auto;
+}
+
+.thank-you-card {
+    background-color: var(--dark_blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    width: 20%;
+    border-radius: 20px;
+}
+
+.selected-raiting {
+    background-color: var(--medium_gray);
+    color: var(--orange);
+    border-radius: 20px;
+    padding: 5px 0px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+
+/* ATTRIBUTION */
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+}
+
+.attribution a {
+    text-decoration: underline;
+    color: var(--light_gray);   
+    font-weight: 600;
+}
