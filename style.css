@@ -70,6 +70,7 @@ p{
 }
 
 .rating-number-wrapper:hover {
+    cursor: pointer;
     background-color: var(--orange);
     color: var(--white);
 }
@@ -89,6 +90,7 @@ p{
 }
 
 .submit:hover {
+    cursor: pointer;
     transition: 0.5s;
     background-color: var(--white);
     color: var(--orange);
